@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("ss2ep1/background.svg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  font-size: clamp(1.125rem, 1.041rem + 0.327vw, 1.25rem);
+  padding: min(2vh, 6%);
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Logo {
+  margin-bottom: 2rem;
+  max-width: 150px;
+}
+
+#Upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: clamp(2.5rem, 2.079rem + 1.634vw, 3.125rem);
+  width: 90%;
+}
+
+.content {
+  color: white;
+  font-weight: 400;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: min(2vh, 4%);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 769px;
+  width: 100%;
+}
+
+.Form-title {
+  font-size: clamp(0.813rem, 0.602rem + 0.817vw, 1.125rem);
+  color: white;
+  font-weight: bold;
+}
+
+.input,
+.input1 {
+  padding: min(2vh, 4%);
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.expand {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 10px;
+  pointer-events: none;
+}
+
+.message {
+  padding: min(2vh, 4%);
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  min-height: clamp(10rem, 9rem + 1vw, 12rem);
+}
+
+.message::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.input::placeholder,
+.input1::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  padding: min(3vh, 6%);
+  border-radius: 10px;
+  border: none;
+  color: blue;
+  font-weight: bold;
+  font-size: clamp(1.25rem, 1.04rem + 0.817vw, 1.563rem);
+  background-color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-width: 693px) {
+  #Upper {
+    margin-bottom: 3rem;
+  }
+  .title {
+    width: 80%;
+  }
+  .content {
+    width: 60%;
+    line-height: 2rem;
+  }
+}
