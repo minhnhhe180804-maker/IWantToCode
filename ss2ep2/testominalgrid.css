@@ -47,7 +47,7 @@ main {
 display: grid;
 padding: min(2vh, 6%);
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-grid-template-rows: 1fr 1fr;
+
 gap: 4rem;
 }
 .container,.container1{
@@ -73,27 +73,23 @@ gap: 4rem;
 @media screen and (min-width:690px) {
   .comment-section{
   grid-template-columns: repeat(2, minmax(300px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+ 
   
   
   }
   main{
     display: grid;
     grid-template-columns: repeat(1, minmax(300px, 1fr));
-    grid-template-rows: 1fr 1fr;
+   
     gap: 4rem;
   }
 .container { grid-area: 1 / 2 / 2 / 3; }
 .container1 { grid-area: 2 / 1 / 3 / 2; }
 }
-@media screen and (min-width:1024px){
-  main{
+
+@media screen and (min-width:1440px){
+   main{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-  }
-  .comment-section{
-    display: grid;
-    grid-template-columns: 400px 400px;
-    
+    grid-template-columns: repeat(2,minmax(400px,1fr));
   }
 }
