@@ -5,7 +5,8 @@
 }
 
 body {
-  background-image: url("ss2ep1/background.svg");
+  background-image: url("ss2ep1/Background.svg");
+
   background-size: cover;
   background-position: center;
   min-height: 100vh;
