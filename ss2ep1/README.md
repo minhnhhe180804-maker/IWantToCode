@@ -1,2 +1,0 @@
-# IWantToCode
-Just getting started
